@@ -1,5 +1,9 @@
 # 微前端框架 之 qiankun 从入门到源码分析
 
+![](https://gitee.com/liyongning/typora-image-bed/raw/master/202202101144574.png)  
+
+文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
+
 ## 封面
 
 ![](https://gitee.com/liyongning/typora-image-bed/raw/master/202202041054955.jpg)
@@ -1743,11 +1747,7 @@ export class ScopedCSS {
 
 
 
-感谢各位的：**点赞**、**收藏**和**评论**，我们下期见。
+![](https://gitee.com/liyongning/typora-image-bed/raw/master/202202101145386.png)  
 
----
-
-**当学习成为了习惯，知识也就变成了常识**，扫码关注微信公众号，共同学习、进步。文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
-
-![微信公众号](https://gitee.com/liyongning/typora-image-bed/raw/master/202202031917839.jpg)
+文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
 

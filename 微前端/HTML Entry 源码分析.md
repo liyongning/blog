@@ -1,5 +1,9 @@
 # HTML Entry 源码分析
 
+![](https://gitee.com/liyongning/typora-image-bed/raw/master/202202101145859.png)  
+
+文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
+
 ## 封面
 
 ![202202031927948](https://gitee.com/liyongning/typora-image-bed/raw/master/202202051816571.jpg)
@@ -674,10 +678,6 @@ export function execScripts(entry, scripts, proxy = window, opts = {}) {
 
 
 
-感谢各位的：**点赞**、**收藏**和**评论**，我们下期见。
+![](https://gitee.com/liyongning/typora-image-bed/raw/master/202202101146872.png)  
 
----
-
-**当学习成为了习惯，知识也就变成了常识**，扫码关注微信公众号，共同学习、进步。文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
-
-![微信公众号](https://gitee.com/liyongning/typora-image-bed/raw/master/202202031923522.jpg)
+文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
