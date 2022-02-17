@@ -1,6 +1,8 @@
 # qiankun 2.x 运行时沙箱 源码分析
 
-![](https://gitee.com/liyongning/typora-image-bed/raw/master/202202101146182.png)  
+**当学习成为了习惯，知识也就变成了常识。**感谢各位的 **点赞**、**收藏**和**评论**。
+
+新视频和文章会第一时间在微信公众号发送，欢迎关注：[李永宁lyn](https://gitee.com/liyongning/typora-image-bed/raw/master/202202171742614.jpg)
 
 文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
 
@@ -1334,6 +1336,12 @@ export default function patch(global: WindowProxy) {
 
 
 
-![](https://gitee.com/liyongning/typora-image-bed/raw/master/202202101146304.png)  
+感谢各位的：**点赞**、**收藏**和**评论**，我们下期见。
+
+---
+
+**当学习成为了习惯，知识也就变成了常识。**感谢各位的 **点赞**、**收藏**和**评论**。
+
+新视频和文章会第一时间在微信公众号发送，欢迎关注：[李永宁lyn](https://gitee.com/liyongning/typora-image-bed/raw/master/202202171742614.jpg)
 
 文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。

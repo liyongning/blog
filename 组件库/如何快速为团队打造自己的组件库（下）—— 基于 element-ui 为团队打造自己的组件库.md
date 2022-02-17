@@ -1,6 +1,8 @@
 # 如何快速为团队打造自己的组件库（下）—— 基于 element-ui 为团队打造自己的组件库
 
-![](https://gitee.com/liyongning/typora-image-bed/raw/master/202202102106208.png)  
+**当学习成为了习惯，知识也就变成了常识。**感谢各位的 **点赞**、**收藏**和**评论**。
+
+新视频和文章会第一时间在微信公众号发送，欢迎关注：[李永宁lyn](https://gitee.com/liyongning/typora-image-bed/raw/master/202202171742614.jpg)
 
 文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
 
@@ -844,6 +846,12 @@ element-ui 本身依赖的是 vue@^2.5.x，该版本的 vue 不支持最新的 `
 
 
 
-![](https://gitee.com/liyongning/typora-image-bed/raw/master/202202131940881.png)  
+感谢各位的：**点赞**、**收藏**和**评论**，我们下期见。
+
+---
+
+**当学习成为了习惯，知识也就变成了常识。**感谢各位的 **点赞**、**收藏**和**评论**。
+
+新视频和文章会第一时间在微信公众号发送，欢迎关注：[李永宁lyn](https://gitee.com/liyongning/typora-image-bed/raw/master/202202171742614.jpg)
 
 文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
