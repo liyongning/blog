@@ -1,10 +1,10 @@
 # uni-app、Vue3 + ucharts 图表 H5 无法渲染
 
-**当学习成为了习惯，知识也就变成了常识。**感谢各位的 **点赞**、**收藏**和**评论**。
+**当学习成为了习惯，知识也就变成了常识。** 感谢各位的 **关注**、**点赞**、**收藏**和**评论**。
 
 新视频和文章会第一时间在微信公众号发送，欢迎关注：[李永宁lyn](https://gitee.com/liyongning/typora-image-bed/raw/master/202202171742614.jpg)
 
-文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
+文章已收录到 [github 仓库 liyongning/blog](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
 
 ## 封面
 
@@ -200,15 +200,18 @@ if (command === 'build') {
 ## 链接
 
 * [精通 uni-app 专栏](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA3NTk4NjQ1OQ==&action=getalbum&album_id=2271926502294519808#wechat_redirect)
+* [精通 Vue 技术栈源码原理 专栏](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA3NTk4NjQ1OQ==&action=getalbum&album_id=2273541436891693065#wechat_redirect)
+* [组件库 专栏](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA3NTk4NjQ1OQ==&action=getalbum&album_id=2259813235891863559#wechat_redirect)
+* [微前端 专栏](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA3NTk4NjQ1OQ==&action=getalbum&album_id=2251416802327232513#wechat_redirect)
 
 
 
-感谢各位的：**点赞**、**收藏**和**评论**，我们下期见。
+感谢各位的：**关注**、**点赞**、**收藏**和**评论**，我们下期见。
 
----
+***
 
-**当学习成为了习惯，知识也就变成了常识。**感谢各位的 **点赞**、**收藏**和**评论**。
+**当学习成为了习惯，知识也就变成了常识。** 感谢各位的 **关注**、 **点赞**、**收藏**和**评论**。
 
 新视频和文章会第一时间在微信公众号发送，欢迎关注：[李永宁lyn](https://gitee.com/liyongning/typora-image-bed/raw/master/202202171742614.jpg)
 
-文章已收录到 [github](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
+文章已收录到 [github 仓库 liyongning/blog](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
