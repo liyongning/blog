@@ -1,20 +1,34 @@
-## 说明
+当阅读成为习惯，知识也就变成了常识！！
 
-各大博客的文章、视频都会保存在该仓库中，有新的分享首先会发布到 [微信公众号](https://gitee.com/liyongning/typora-image-bed/raw/master/202202051901281.jpg) 和 github 仓库，建议关注微信公众号和该仓库，第一时间获取最新内容（干货）。
+避免失联，先点 Star。如果内容对你有帮助也欢迎将仓库分享给你的同伴，更欢迎成为仓库贡献者，成为开源项目的 Contributor。
+
+## 为什么要有这个仓库？
+
+最开始用来作为自己的私人博客仓库，仓库中的博文会发布到各大技术平台和 B 站，B 站以视频形式分享。现在打算将仓库开源，接受网友的投稿，所以仓库内容会分为两部分：一部分为我自己的技术分享，一部分内容来源于网友投稿。投稿方式看贡献指南。
+
+## 仓库的主要内容是？
+
+仓库目前主要以前端知识为主，比如基础知识、最佳实践、源码原理、面经等，内容必须为精品（我的主观评价），后续可能会陆续增加其它内容。
+
+## 贡献指南
+
+**注意：** 内容必须为**原创，禁止抄袭**，由于没有对应的限制机制，所以需要贡献者自我约束，如果出现问题，经核实后内容会被删除。
+
+**投稿步骤：**
+1. 开一个 issue，可以简单描述一下投稿内容，然后关闭 issue
+2. fork 仓库，在 `/网友投稿` 目录下开始编写你的博文
+3. 编写完毕后提交 PR
+4. PR 通过后我会重新打开 PR 关联的 issue，将博文内容发布到 issue，并抽时间将博文分享到各大技术平台，会著名来源和作者，作者是贡献者的 github 主页
+5. 最后恭喜自己成为开源项目的 contributor
+
+**解释：**
+* 第一步为什么要关闭 issue？因为博文的是以 issue 的形式发布的，而 github issue 默认显示打开状态的 issue，所以为了保证已发布文章的阅读体现，未收到合适 PR 的 issue 会以关闭的形式存在，这点区别于一般的开源项目，所以请大家务必注意，如果发现你未关闭 issue，我会给你关掉
+* 如果 issue 长时间处于关闭状态（即未收到合适的 PR），会被删掉
+
+## 目录
 
 ## 博客主页
 
-* [微信公众号](https://gitee.com/liyongning/typora-image-bed/raw/master/202202051901281.jpg)![](https://gitee.com/liyongning/typora-image-bed/raw/master/202202051901281.jpg)
-
+* [微信公众号](https://gitee.com/liyongning/typora-image-bed/raw/master/202202051901281.jpg)
 * [掘金](https://juejin.cn/user/1028798616461326)
-* [知乎](https://www.zhihu.com/people/3-63-67-11)
-* [语雀](https://www.yuque.com/liyongning-xbmkt/kk2i0g)
-
-* [SegmentFault 思否](https://segmentfault.com/u/liyongning_lyn/articles)
-
-* [CSDN](https://blog.csdn.net/m0_66439275)
-* [博客园](https://www.cnblogs.com/liyongning/)
-* [简书](https://www.jianshu.com/u/83ae8409b409)
-* [慕课网](https://www.imooc.com/u/index/articles)
-* [OSCHINA 开源中国](https://www.imooc.com/u/index/articles)
-
+* [B 站](https://space.bilibili.com/359669053)
