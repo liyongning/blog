@@ -57,6 +57,10 @@
 
 * [uni-app、Vue3 + ucharts 图表 H5 无法渲染](https://github.com/liyongning/blog/issues/30)
 
+#### 其它
+
+* [思维导图 + 文字 = 让你一次性学会正则表达式](https://github.com/liyongning/blog/issues/31)
+
 ## 博客主页
 
 * [微信公众号](https://gitee.com/liyongning/typora-image-bed/raw/master/202202051901281.jpg)
