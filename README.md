@@ -4,7 +4,7 @@
 
 ## 为什么要有这个仓库？
 
-最开始用来作为自己的私人博客仓库，仓库中的博文会发布到各大技术平台和 B 站，B 站以视频形式分享。现在打算将仓库开源，接受网友的投稿，所以仓库内容会分为两部分：一部分为我自己的技术分享，一部分内容来源于网友投稿。投稿方式看贡献指南。
+最开始用来作为自己的私人博客仓库，仓库中的博文会发布到各大技术平台和 B 站，B 站以视频形式分享。现在打算将仓库开源，接受网友的投稿，所以仓库内容会分为两部分：一部分为我自己的技术分享，一部分内容来源于网友投稿。投稿方式看[贡献指南](https://github.com/liyongning/blog/blob/45bb1cbf93f2813126ac3419ad0ea9ce93ab9176/.github/CONTRIBUTING.md)。
 
 ## 仓库的主要内容是？
 
@@ -12,20 +12,50 @@
 
 ## 贡献指南
 
-**注意：** 内容必须为**原创，禁止抄袭**，由于没有对应的限制机制，所以需要贡献者自我约束，如果出现问题，经核实后内容会被删除。
-
-**投稿步骤：**
-1. 开一个 issue，可以简单描述一下投稿内容，然后关闭 issue
-2. fork 仓库，在 `/网友投稿` 目录下开始编写你的博文
-3. 编写完毕后提交 PR
-4. PR 通过后我会重新打开 PR 关联的 issue，将博文内容发布到 issue，并抽时间将博文分享到各大技术平台，会著名来源和作者，作者是贡献者的 github 主页
-5. 最后恭喜自己成为开源项目的 contributor
-
-**解释：**
-* 第一步为什么要关闭 issue？因为博文的是以 issue 的形式发布的，而 github issue 默认显示打开状态的 issue，所以为了保证已发布文章的阅读体现，未收到合适 PR 的 issue 会以关闭的形式存在，这点区别于一般的开源项目，所以请大家务必注意，如果发现你未关闭 issue，我会给你关掉
-* 如果 issue 长时间处于关闭状态（即未收到合适的 PR），会被删掉
+[贡献指南](https://github.com/liyongning/blog/blob/45bb1cbf93f2813126ac3419ad0ea9ce93ab9176/.github/CONTRIBUTING.md)
 
 ## 目录
+
+#### [精通 Vue 技术栈源码原理](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3AVue)
+
+* [Vue 源码解读（1）—— 前言](https://github.com/liyongning/blog/issues/10)
+* [Vue 源码解读（2）—— Vue 初始化过程](https://github.com/liyongning/blog/issues/11)
+* [Vue 源码解读（3）—— 响应式原理](https://github.com/liyongning/blog/issues/12)
+* [Vue 源码解读（4）—— 异步更新](https://github.com/liyongning/blog/issues/13)
+* [Vue 源码解读（5）—— 全局 API ](https://github.com/liyongning/blog/issues/14)
+* [Vue 源码解读（6）—— 实例方法](https://github.com/liyongning/blog/issues/15)
+* [Vue 源码解读（7）—— Hook Event](https://github.com/liyongning/blog/issues/16)
+* [Vue 源码解读（8）—— 编译器 之 解析（上）](https://github.com/liyongning/blog/issues/17)
+* [Vue 源码解读（8）—— 编译器 之 解析（下）](https://github.com/liyongning/blog/issues/18)
+* [Vue 源码解读（9）—— 编译器 之 优化 ](https://github.com/liyongning/blog/issues/19)
+* [Vue 源码解读（10）—— 编译器 之 生成渲染函数](https://github.com/liyongning/blog/issues/20)
+* [Vue 源码解读（11）—— render helper](https://github.com/liyongning/blog/issues/21)
+* [Vue 源码解读（12）—— patch](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue 系列 之 Vue1.x](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue 系列 之 从 Vue1 升级到 Vue2](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue2 系列 之 编译器](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue2 系列 之 初始渲染](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue2 系列 之 patch —— diff](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue2 系列 之 computed](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue2 系列 之 异步更新队列](https://github.com/liyongning/blog/issues/22)
+
+#### [微前端](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3A%E5%BE%AE%E5%89%8D%E7%AB%AF)
+
+* [微前端框架 之 single-spa 从入门到精通](https://github.com/liyongning/blog/issues/2)
+* [微前端框架 之 qiankun 从入门到源码分析](https://github.com/liyongning/blog/issues/3)
+* [qiankun 2.x 运行时沙箱 源码分析](https://github.com/liyongning/blog/issues/4)
+* [HTML Entry 源码分析](https://github.com/liyongning/blog/issues/5)
+
+#### [组件库](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3A%E7%BB%84%E4%BB%B6%E5%BA%93)
+
+* [从 0 到 1 搭建组件库](https://github.com/liyongning/blog/issues/6)
+* [按需加载原理分析](https://github.com/liyongning/blog/issues/7)
+* [如何快速为团队打造自己的组件库（上）—— Element 源码架构](https://github.com/liyongning/blog/issues/8)
+* [如何快速为团队打造自己的组件库（下）—— 基于 element-ui 为团队打造自己的组件库](https://github.com/liyongning/blog/issues/9)
+
+#### [uni-app](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3Auni-app)
+
+* [uni-app、Vue3 + ucharts 图表 H5 无法渲染](https://github.com/liyongning/blog/issues/30)
 
 ## 博客主页
 
