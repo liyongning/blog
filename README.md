@@ -16,6 +16,10 @@
 
 ## 目录
 
+#### [uni-app](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3Auni-app)
+
+* [uni-app、Vue3 + ucharts 图表 H5 无法渲染](https://github.com/liyongning/blog/issues/30)
+
 #### [精通 Vue 技术栈源码原理](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3AVue)
 
 * [Vue 源码解读（1）—— 前言](https://github.com/liyongning/blog/issues/10)
@@ -52,10 +56,6 @@
 * [按需加载原理分析](https://github.com/liyongning/blog/issues/7)
 * [如何快速为团队打造自己的组件库（上）—— Element 源码架构](https://github.com/liyongning/blog/issues/8)
 * [如何快速为团队打造自己的组件库（下）—— 基于 element-ui 为团队打造自己的组件库](https://github.com/liyongning/blog/issues/9)
-
-#### [uni-app](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3Auni-app)
-
-* [uni-app、Vue3 + ucharts 图表 H5 无法渲染](https://github.com/liyongning/blog/issues/30)
 
 ## 博客主页
 
