@@ -60,6 +60,7 @@
 #### 其它
 
 * [思维导图 + 文字 = 让你一次性学会正则表达式](https://github.com/liyongning/blog/issues/31)
+* [在线主题切换](https://github.com/liyongning/blog/issues/32)
 
 ## 博客主页
 
