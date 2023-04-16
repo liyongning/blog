@@ -53,13 +53,13 @@ Link: <example.js>; rel="preload"; as="script"
 
 在使用 <link rel="preload"> 标签时，as 属性用于指定预加载资源的类型。它告诉浏览器如何处理预加载的资源，并在加载过程中进行优化。以下是一些常见的as属性值：
 
-* as="script"：预加载JavaScript文件
-* as="style"：预加载CSS文件
-* as="font"：预加载字体文件
-* as="image"：预加载图片文件
-* as="audio"：预加载音频文件
-* as="video"：预加载视频文件
-* as="fetch"：预加载数据文件（例如JSON、XML等）。
+* as="script"，预加载JavaScript文件
+* as="style"，预加载CSS文件
+* as="font"，预加载字体文件
+* as="image"，预加载图片文件
+* as="audio"，预加载音频文件
+* as="video"，预加载视频文件
+* as="fetch"，预加载数据文件（例如JSON、XML等）。
 
 使用正确的 as 属性可以帮助浏览器更好地优化预加载的资源，并在加载过程中提高性能。例如，如果您预加载的是 CSS 文件，则应将as属性设置为 "style"，这将使浏览器在预加载 CSS 文件时执行一些优化，例如提前解析样式并缓存它们。同样，如果您预加载的是字体文件，则应将 as 属性设置为 "font"，这将使浏览器在预加载字体文件时执行一些优化，例如提前解码字体并进行缓存。
 
