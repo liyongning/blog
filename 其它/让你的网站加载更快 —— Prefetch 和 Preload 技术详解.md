@@ -1,4 +1,10 @@
-# 让你的网站加载更快 —— Prefetch 和 Preload 技术详解
+**当学习成为了习惯，知识也就变成了常识。** 感谢各位的 **关注**、**点赞**、**收藏**和**评论**。
+
+新视频和文章会第一时间在微信公众号发送，欢迎关注：[李永宁lyn](https://gitee.com/liyongning/typora-image-bed/raw/master/202202171742614.jpg)
+
+文章已收录到 [github 仓库 liyongning/blog](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
+
+# 简介
 
 prefetch 和 preload 是浏览器提供的两种资源预加载技术，它们可以预先请求浏览器可能需要的资源，并将这些资源缓存到本地，以便在页面需要时能够更快地获取，从而显著提高网站性能，优化用户体验。这些资源可以是文本文件、图像、音频或视频等各种类型的文件。
 
@@ -11,7 +17,7 @@ prefetch 和 preload 之间的主要区别在于:
 * prefetch 利用浏览器的空闲时间，预加载将来可能会被用户访问到的资源，由于是利用浏览器的空闲时间，所以它不会影响当前页的加载性能，当然也不保证预加载的资源一定会被提前缓存，假如浏览器一直很忙
 * preload 用于预加载即将被使用的资源，被标记为 preload 的资源会被优先加载，也就是说它会保证预加载的资源在使用前一定会被提前缓存到本地，所以，如果使用不当，它会影响当前页的加载性能
 
-## prefetch
+# prefetch
 
 prefetch 可以帮助浏览器在页面加载之前预取用户可能需要的资源，以加快网站的整体加载速度。这些资源包括但不限于图像、脚本和样式表。
 
@@ -31,7 +37,7 @@ Link: <example.js>; rel="prefetch"
 
 值得注意的是，prefetch 并不保证资源的加载顺序或加载时间，也不保证在需要使用之前资源一定会被缓存，因为 prefetch 是在浏览器空闲时间工作，所以如果浏览器一直忙，prefetch 的资源就没机会被加载。
 
-## preload
+# preload
 
 preload 是一种更为复杂的资源预加载技术，它可以在页面加载时预取即将被使用的资源，以加快页面的渲染速度。这些资源包括但不限于图像、脚本和样式表。
 
@@ -49,7 +55,7 @@ Link: <example.js>; rel="preload"; as="script"
 
 与 prefetch 不同，preload 可以确保资源的加载顺序和时间，并且这些资源在使用前一定会被缓存。但是，preload 也需要谨慎使用，因为标有 preload 的资源会被优先加载，因此它可能会影响页面的加载性能。如果您的网站中有大量资源需要预加载，可能会影响页面的渲染速度。
 
-## as 属性
+# as 属性
 
 在使用 <link rel="preload"> 标签时，as 属性用于指定预加载资源的类型。它告诉浏览器如何处理预加载的资源，并在加载过程中进行优化。以下是一些常见的as属性值：
 
@@ -67,7 +73,7 @@ Link: <example.js>; rel="preload"; as="script"
 
 > 经过实际测试，发现 preload 不使用 as 属性，观看 network 面板中资源的加载顺序，看起来 preload 像失效了，而且有时候浏览器的 console 会给出告警。
 
-## 实战
+# 实战
 
 下面我们将通过一个示例来演示 prefetch 和 preload 的相关知识点：
 
@@ -114,7 +120,81 @@ Link: <example.js>; rel="preload"; as="script"
 
 <img width="1536" alt="image" src="https://user-images.githubusercontent.com/26913352/232323297-43b87e61-d5b3-4d41-ac18-f8e388a5f2a0.png">
 
-## 总结
+# 总结
 
 prefetch 和 preload 是两种非常有用的资源预加载技术，可以显著提高网站性能并优化用户体验。使用 prefetch 可以帮助浏览器预取将来可能会被用户访问到的资源，而使用 preload 可以预加载即将被使用的资源。在使用这些技术时，我们需要注意谨慎使用，确保只预加载可能会被用户使用的资源，从而并避免过度预加载导致性能问题。
+
+**当学习成为了习惯，知识也就变成了常识。** 感谢各位的 **关注**、**点赞**、**收藏**和**评论**。
+
+新视频和文章会第一时间在微信公众号发送，欢迎关注：[李永宁lyn](https://gitee.com/liyongning/typora-image-bed/raw/master/202202171742614.jpg)
+
+文章已收录到 [github 仓库 liyongning/blog](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
+
+# 更多精彩内容
+
+## [精通 Vue 技术栈源码原理](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3AVue)
+
+* [Vue 源码解读（1）—— 前言](https://github.com/liyongning/blog/issues/10)
+* [Vue 源码解读（2）—— Vue 初始化过程](https://github.com/liyongning/blog/issues/11)
+* [Vue 源码解读（3）—— 响应式原理](https://github.com/liyongning/blog/issues/12)
+* [Vue 源码解读（4）—— 异步更新](https://github.com/liyongning/blog/issues/13)
+* [Vue 源码解读（5）—— 全局 API ](https://github.com/liyongning/blog/issues/14)
+* [Vue 源码解读（6）—— 实例方法](https://github.com/liyongning/blog/issues/15)
+* [Vue 源码解读（7）—— Hook Event](https://github.com/liyongning/blog/issues/16)
+* [Vue 源码解读（8）—— 编译器 之 解析（上）](https://github.com/liyongning/blog/issues/17)
+* [Vue 源码解读（8）—— 编译器 之 解析（下）](https://github.com/liyongning/blog/issues/18)
+* [Vue 源码解读（9）—— 编译器 之 优化 ](https://github.com/liyongning/blog/issues/19)
+* [Vue 源码解读（10）—— 编译器 之 生成渲染函数](https://github.com/liyongning/blog/issues/20)
+* [Vue 源码解读（11）—— render helper](https://github.com/liyongning/blog/issues/21)
+* [Vue 源码解读（12）—— patch](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue 系列 之 Vue1.x](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue 系列 之 从 Vue1 升级到 Vue2](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue2 系列 之 编译器](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue2 系列 之 初始渲染](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue2 系列 之 patch —— diff](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue2 系列 之 computed](https://github.com/liyongning/blog/issues/22)
+* [手写 Vue2 系列 之 异步更新队列](https://github.com/liyongning/blog/issues/22)
+
+## [微前端](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3A%E5%BE%AE%E5%89%8D%E7%AB%AF)
+
+* [微前端框架 之 single-spa 从入门到精通](https://github.com/liyongning/blog/issues/2)
+* [微前端框架 之 qiankun 从入门到源码分析](https://github.com/liyongning/blog/issues/3)
+* [qiankun 2.x 运行时沙箱 源码分析](https://github.com/liyongning/blog/issues/4)
+* [HTML Entry 源码分析](https://github.com/liyongning/blog/issues/5)
+
+## [组件库](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3A%E7%BB%84%E4%BB%B6%E5%BA%93)
+
+* [从 0 到 1 搭建组件库](https://github.com/liyongning/blog/issues/6)
+* [按需加载原理分析](https://github.com/liyongning/blog/issues/7)
+* [如何快速为团队打造自己的组件库（上）—— Element 源码架构](https://github.com/liyongning/blog/issues/8)
+* [如何快速为团队打造自己的组件库（下）—— 基于 element-ui 为团队打造自己的组件库](https://github.com/liyongning/blog/issues/9)
+
+## [uni-app](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3Auni-app)
+
+* [uni-app、Vue3 + ucharts 图表 H5 无法渲染](https://github.com/liyongning/blog/issues/30)
+
+## [PDF 生成](https://github.com/liyongning/blog/issues?q=is%3Aopen+is%3Aissue+label%3A%22PDF+%E7%94%9F%E6%88%90%22)
+
+* [PDF 生成（1）— 开篇](https://github.com/liyongning/blog/issues/42) 中讲解了 PDF 生成的技术背景、方案选型和决策，以及整个方案的技术架构图，所以后面的几篇一直都是在实现整套技术架构
+* [PDF 生成（2）— 生成 PDF 文件](https://github.com/liyongning/blog/issues/43) 中我们通过 puppeteer 来生成 PDF 文件，并讲了自定义页眉、页脚的使用和其中的**坑**。本文结束之后 puppeteer 在 PDF 文件生成场景下的能力也基本到头了，所以，接下来的内容就全是基于 puppeteer 的增量开发了，也是整套架构的**核心**和**难点**
+* [PDF 生成（3）— 封面、尾页](https://github.com/liyongning/blog/issues/44) 通过 PDF 文件合并技术让一份 PDF 文件包含封面、内容页和尾页三部分。
+* [PDF 生成（4）— 目录页](https://github.com/liyongning/blog/issues/45) 通过在内容页的开始位置动态插入 HTML 锚点、页面缩放、锚点元素高度计算、换页高度补偿等技术让 PDF 文件拥有了包含准确页码 + 页面跳转能力的目录页
+* [PDF 生成（5）— 内容页支持由多页面组成](https://github.com/liyongning/blog/issues/46) 通过多页面合并技术 + 样式沙箱解决了用户在复杂 PDF 场景下前端代码维护问题，让用户的开发更自由、更符合业务逻辑
+* [PDF 生成（6）— 服务化、配置化](https://github.com/liyongning/blog/issues/47) 就是本文了，本系列的最后一篇，以服务化的方式对外提供 PDF 生成能力，通过配置服务来维护接入方的信息，通过队列来做并发控制和任务分类
+* [代码仓库](https://github.com/liyongning/generate-pdf) **欢迎 Star**
+
+## 其它
+
+* [思维导图 + 文字 = 让你一次性学会正则表达式](https://github.com/liyongning/blog/issues/31)
+* [在线主题切换](https://github.com/liyongning/blog/issues/32)
+* [如何使用 axios 实现前端并发限制和重试机制](https://github.com/liyongning/blog/issues/34)
+* [让你的网站加载更快 —— Prefetch 和 Preload 技术详解](https://github.com/liyongning/blog/issues/33)
+
+## 博客主页
+
+* [微信公众号](https://gitee.com/liyongning/typora-image-bed/raw/master/202202051901281.jpg)
+* [掘金](https://juejin.cn/user/1028798616461326)
+* [B 站](https://space.bilibili.com/359669053)
+
+
 

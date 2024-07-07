@@ -71,6 +71,8 @@
 
 * [思维导图 + 文字 = 让你一次性学会正则表达式](https://github.com/liyongning/blog/issues/31)
 * [在线主题切换](https://github.com/liyongning/blog/issues/32)
+* [如何使用 axios 实现前端并发限制和重试机制](https://github.com/liyongning/blog/issues/34)
+* [让你的网站加载更快 —— Prefetch 和 Preload 技术详解](https://github.com/liyongning/blog/issues/33)
 
 ## 博客主页
 
