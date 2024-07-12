@@ -69,6 +69,8 @@
 * [在线主题切换](https://github.com/liyongning/blog/issues/32)
 * [如何使用 axios 实现前端并发限制和重试机制](https://github.com/liyongning/blog/issues/34)
 * [让你的网站加载更快 —— Prefetch 和 Preload 技术详解](https://github.com/liyongning/blog/issues/33)
+* [一文搞透文件上传](https://github.com/liyongning/blog/issues/49)
+* [开发环境配置安全的 HTTPS 协议](https://github.com/liyongning/blog/issues/50)
 
 ## 博客主页
 
