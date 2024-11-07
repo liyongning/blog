@@ -71,6 +71,7 @@
 * [让你的网站加载更快 —— Prefetch 和 Preload 技术详解](https://github.com/liyongning/blog/issues/33)
 * [一文搞透文件上传](https://github.com/liyongning/blog/issues/49)
 * [开发环境配置安全的 HTTPS 协议](https://github.com/liyongning/blog/issues/50)
+* [听说你面试想作弊？浏览器做切屏检测](https://github.com/liyongning/blog/issues/51)
 
 ## 博客主页
 
