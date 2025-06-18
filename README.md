@@ -72,6 +72,8 @@
 * [一文搞透文件上传](https://github.com/liyongning/blog/issues/49)
 * [开发环境配置安全的 HTTPS 协议](https://github.com/liyongning/blog/issues/50)
 * [听说你面试想作弊？浏览器做切屏检测](https://github.com/liyongning/blog/issues/51)
+* [浏览器路由拦截器 —— 优雅监听前端路由变化](https://github.com/liyongning/blog/issues/52)
+* [AI 编辑器 + MCP 轻松实现设计稿生成前端代码](https://github.com/liyongning/blog/issues/53)
 
 ## 博客主页
 
