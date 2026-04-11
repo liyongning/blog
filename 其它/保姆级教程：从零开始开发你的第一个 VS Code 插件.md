@@ -293,6 +293,7 @@ export function deactivate() {}
 *   **[VS Code API 官方文档](https://code.visualstudio.com/api)**：最权威的指南。
 *   **[Extension Samples](https://github.com/microsoft/vscode-extension-samples)**：微软官方提供的几十个示例代码，想实现什么功能先去这里找找。
 *   **[VS Code 插件开发指南 (中文)](https://liiked.github.io/VS-Code-Extension-Doc-ZH/)**：社区维护的中文文档。
+*   **[教程配套代码](https://github.com/liyongning/vscode-plugin-demo)**
 
 祝你在插件开发的道路上越走越远！🚀
 

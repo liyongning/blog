@@ -147,3 +147,13 @@ GEO与传统SEO的核心区别在于：
 
 - 落地的关键在于**理解不同大模型的RAG特性，结合行业定位，定制内容与分发策略**。
   随着大模型持续进化，GEO将从单纯的内容优化，走向技术、数据、运营的深度融合，成为品牌在AI时代构建认知与流量壁垒的核心手段。
+
+---
+
+**当学习成为了习惯，知识也就变成了常识。** 感谢各位的 **关注**、**点赞**、**收藏**和**评论**。
+
+新视频和文章会第一时间在微信公众号发送，欢迎关注：[李永宁lyn](https://gitee.com/liyongning/typora-image-bed/raw/master/202202171742614.jpg)
+
+文章已收录到 [github 仓库 liyongning/blog](https://github.com/liyongning/blog)，欢迎 Watch 和 Star。
+
+**[更多精彩内容](https://github.com/liyongning/blog/blob/main/README.md)**
