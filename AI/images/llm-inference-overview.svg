@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1290 950" width="1290" height="950">
+  <style>
+    text{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;fill:#1f2328}
+    .t{font-size:22px;font-weight:600}
+    .h{font-size:17px;font-weight:600}
+    .bh{font-size:16px;font-weight:600}
+    .b{font-size:14px}
+    .s{font-size:12.5px;fill:#57606a}
+    .m{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:12.5px}
+    .run{fill:#ffffff;stroke:#4a7fd4;stroke-width:1.5}
+    .out{fill:#f3ecff;stroke:#7c4dcc;stroke-width:1.5}
+    .neu{fill:#ffffff;stroke:#8c959f;stroke-width:1.5}
+    .kv{fill:#e9f7ee;stroke:#2f9e5b;stroke-width:1.5}
+    .pill{fill:#eaf2ff;stroke:#9dbbea;stroke-width:1}
+    .arr{stroke:#57606a;stroke-width:1.8;fill:none}
+    .loop{stroke:#7c4dcc;stroke-width:2;fill:none}
+    .dkv{stroke:#2f9e5b;stroke-width:1.4;fill:none;stroke-dasharray:4 3}
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+    <marker id="ap" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c4dcc"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2f9e5b"/></marker>
+  </defs>
+  <rect width="1290" height="950" fill="#ffffff"/>
+  <text x="30" y="42" class="t">大模型推理全流程（以 Qwen3:14b 回答「北京的天气怎么样？」为例）</text>
+
+  <!-- ① 文字变成数字 -->
+  <rect x="15" y="65" width="1260" height="170" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="30" y="92" class="bh">① 文字变成数字</text>
+  <text x="170" y="92" class="s">推理引擎拿着模型文件里的词表做预处理，最后一步查词嵌入表</text>
+
+  <rect x="30" y="107" width="285" height="110" rx="10" class="neu"/>
+  <text x="172" y="137" class="h" text-anchor="middle">文字</text>
+  <text x="172" y="167" class="b" text-anchor="middle">北京的天气怎么样？</text>
+  <text x="172" y="193" class="s" text-anchor="middle">用户输入</text>
+
+  <rect x="345" y="107" width="285" height="110" rx="10" class="run"/>
+  <text x="487" y="137" class="h" text-anchor="middle">套对话模板 + 分词</text>
+  <text x="487" y="167" class="b" text-anchor="middle">切成 17 个 token</text>
+  <text x="487" y="193" class="m" text-anchor="middle">&lt;|im_start|&gt; user ↵ 北京 的 …</text>
+
+  <rect x="660" y="107" width="285" height="110" rx="10" class="run"/>
+  <text x="802" y="137" class="h" text-anchor="middle">查词表</text>
+  <text x="802" y="167" class="b" text-anchor="middle">token → 编号</text>
+  <text x="802" y="193" class="m" text-anchor="middle">北京 → 68990</text>
+
+  <rect x="975" y="107" width="285" height="110" rx="10" class="run"/>
+  <text x="1117" y="137" class="h" text-anchor="middle">查词嵌入表</text>
+  <text x="1117" y="167" class="b" text-anchor="middle">编号 → 初始向量 H</text>
+  <text x="1117" y="193" class="s" text-anchor="middle">17 个 H，每个 5120 维</text>
+
+  <line x1="315" y1="162" x2="343" y2="162" class="arr" marker-end="url(#a)"/>
+  <line x1="630" y1="162" x2="658" y2="162" class="arr" marker-end="url(#a)"/>
+  <line x1="945" y1="162" x2="973" y2="162" class="arr" marker-end="url(#a)"/>
+  <path d="M1117,217 L1117,245 L250,245 L250,295" class="arr" marker-end="url(#a)"/>
+
+  <!-- ② 预填充 -->
+  <rect x="15" y="255" width="1260" height="270" rx="12" fill="#f3f7ff" stroke="#c9d8f2"/>
+  <text x="30" y="282" class="bh">② 预填充</text>
+  <text x="115" y="282" class="s">17 个 H 一起走完 40 层，每层结构相同、参数不同，上一层的输出就是下一层的输入</text>
+
+  <rect x="30" y="297" width="440" height="150" rx="10" class="run"/>
+  <text x="250" y="322" class="h" text-anchor="middle">第 1 层</text>
+  <rect x="45" y="334" width="410" height="30" rx="6" class="pill"/>
+  <text x="58" y="354" class="b">1  用 H 算出 Q、K、V，K、V 存进 KV Cache</text>
+  <rect x="45" y="370" width="410" height="30" rx="6" class="pill"/>
+  <text x="58" y="390" class="b">2  注意力：Q 和前文每个 K 打分，按比例取 V，加回 H</text>
+  <rect x="45" y="406" width="410" height="30" rx="6" class="pill"/>
+  <text x="58" y="426" class="b">3  前馈：从这一层的参数里取知识，加回 H</text>
+
+  <rect x="510" y="297" width="170" height="150" rx="10" class="run"/>
+  <text x="595" y="342" class="h" text-anchor="middle">第 2 层</text>
+  <text x="595" y="372" class="b" text-anchor="middle">同样的三步</text>
+  <text x="595" y="396" class="s" text-anchor="middle">信息继续传递、组合</text>
+
+  <text x="730" y="380" class="t" text-anchor="middle" style="fill:#57606a">…</text>
+
+  <rect x="780" y="297" width="170" height="150" rx="10" class="run"/>
+  <text x="865" y="342" class="h" text-anchor="middle">第 40 层</text>
+  <text x="865" y="372" class="b" text-anchor="middle">同样的三步</text>
+  <text x="865" y="396" class="s" text-anchor="middle">最后一层</text>
+
+  <rect x="990" y="297" width="270" height="150" rx="10" class="out"/>
+  <text x="1125" y="335" class="h" text-anchor="middle">最后一层输出 H'</text>
+  <text x="1125" y="365" class="b" text-anchor="middle">每个 token 都混进了前文信息</text>
+  <text x="1125" y="391" class="s" text-anchor="middle">只拿最后一个 token（↵↵）</text>
+  <text x="1125" y="413" class="s" text-anchor="middle">的 H' 去打分</text>
+
+  <line x1="470" y1="372" x2="508" y2="372" class="arr" marker-end="url(#a)"/>
+  <line x1="680" y1="372" x2="705" y2="372" class="arr" marker-end="url(#a)"/>
+  <line x1="752" y1="372" x2="778" y2="372" class="arr" marker-end="url(#a)"/>
+  <line x1="950" y1="372" x2="988" y2="372" class="arr" marker-end="url(#a)"/>
+
+  <rect x="30" y="472" width="920" height="38" rx="8" class="kv"/>
+  <text x="490" y="496" class="b" text-anchor="middle" style="fill:#1f6b3d">KV Cache：每一层、每个 token 的 K、V 都存下来，后面生成时直接读，不再重算</text>
+  <line x1="250" y1="447" x2="250" y2="470" class="dkv" marker-end="url(#ag)"/>
+  <line x1="595" y1="447" x2="595" y2="470" class="dkv" marker-end="url(#ag)"/>
+  <line x1="865" y1="447" x2="865" y2="470" class="dkv" marker-end="url(#ag)"/>
+
+  <path d="M1125,447 L1125,540 L172,540 L172,595" class="arr" marker-end="url(#a)"/>
+
+  <!-- ③ 生成第一个 token -->
+  <rect x="15" y="555" width="1260" height="170" rx="12" fill="#faf6ff" stroke="#ddd0f3"/>
+  <text x="30" y="582" class="bh">③ 生成第一个 token</text>
+  <text x="185" y="582" class="s">打分 + 抽签</text>
+
+  <rect x="30" y="597" width="285" height="110" rx="10" class="out"/>
+  <text x="172" y="627" class="h" text-anchor="middle">最后一个 token 的 H'</text>
+  <text x="172" y="657" class="b" text-anchor="middle">↵↵ 在第 40 层的输出</text>
+  <text x="172" y="683" class="s" text-anchor="middle">已装下"在问北京的天气"</text>
+
+  <rect x="345" y="597" width="285" height="110" rx="10" class="out"/>
+  <text x="487" y="627" class="h" text-anchor="middle">和出口表打分</text>
+  <text x="487" y="657" class="b" text-anchor="middle">和每个 token 那一行做点积</text>
+  <text x="487" y="683" class="s" text-anchor="middle">→ logits：每个 token 一个分数</text>
+
+  <rect x="660" y="597" width="285" height="110" rx="10" class="out"/>
+  <text x="802" y="627" class="h" text-anchor="middle">按 temperature 抽签</text>
+  <text x="802" y="657" class="b" text-anchor="middle">softmax：分数 → 概率</text>
+  <text x="802" y="683" class="s" text-anchor="middle">temperature 为 0：直接选最高</text>
+
+  <rect x="975" y="597" width="285" height="110" rx="10" class="out" style="stroke-width:2.2"/>
+  <text x="1117" y="627" class="h" text-anchor="middle">选中「北京」</text>
+  <text x="1117" y="657" class="b" text-anchor="middle">概率 94.4%</text>
+  <text x="1117" y="683" class="s" text-anchor="middle">回答的第 1 个 token</text>
+
+  <line x1="315" y1="652" x2="343" y2="652" class="arr" marker-end="url(#a)"/>
+  <line x1="630" y1="652" x2="658" y2="652" class="arr" marker-end="url(#a)"/>
+  <line x1="945" y1="652" x2="973" y2="652" class="arr" marker-end="url(#a)"/>
+  <path d="M1117,707 L1117,740 L100,740 L100,823" class="loop" marker-end="url(#ap)"/>
+
+  <!-- ④ 解码循环 -->
+  <rect x="15" y="755" width="1260" height="145" rx="12" fill="#fdf8f0" stroke="#ecd9b8"/>
+  <text x="30" y="782" class="bh">④ 解码循环</text>
+  <text x="130" y="782" class="s">新 token 接到末尾，查出它的 H，只让它自己走 40 层，再打分抽签；如此循环，直到结束</text>
+  <text x="130" y="804" class="s" style="fill:#1f6b3d">每一层里，它的 Q 去匹配 KV Cache 里前文所有的 K、V，自己的 K、V 追加进去</text>
+
+  <rect x="40" y="825" width="120" height="50" rx="10" class="out"/>
+  <text x="100" y="856" class="h" text-anchor="middle">北京</text>
+  <rect x="250" y="825" width="120" height="50" rx="10" class="out"/>
+  <text x="310" y="856" class="h" text-anchor="middle">的</text>
+  <rect x="460" y="825" width="120" height="50" rx="10" class="out"/>
+  <text x="520" y="856" class="h" text-anchor="middle">天气</text>
+  <rect x="670" y="825" width="120" height="50" rx="10" class="out"/>
+  <text x="730" y="856" class="h" text-anchor="middle">目前</text>
+  <rect x="880" y="825" width="120" height="50" rx="10" class="out"/>
+  <text x="940" y="856" class="h" text-anchor="middle">晴</text>
+  <rect x="1090" y="825" width="170" height="50" rx="10" class="neu"/>
+  <text x="1175" y="856" class="m" text-anchor="middle">&lt;|im_end|&gt; 结束</text>
+
+  <line x1="160" y1="850" x2="248" y2="850" class="loop" marker-end="url(#ap)"/>
+  <line x1="370" y1="850" x2="458" y2="850" class="loop" marker-end="url(#ap)"/>
+  <line x1="580" y1="850" x2="668" y2="850" class="loop" marker-end="url(#ap)"/>
+  <line x1="790" y1="850" x2="878" y2="850" class="loop" marker-end="url(#ap)"/>
+  <line x1="1000" y1="850" x2="1088" y2="850" class="loop" marker-end="url(#ap)"/>
+  <text x="204" y="842" class="s" text-anchor="middle">40 层</text>
+  <text x="204" y="868" class="s" text-anchor="middle">抽签</text>
+  <text x="414" y="842" class="s" text-anchor="middle">40 层</text>
+  <text x="414" y="868" class="s" text-anchor="middle">抽签</text>
+  <text x="624" y="842" class="s" text-anchor="middle">40 层</text>
+  <text x="624" y="868" class="s" text-anchor="middle">抽签</text>
+  <text x="834" y="842" class="s" text-anchor="middle">40 层</text>
+  <text x="834" y="868" class="s" text-anchor="middle">抽签</text>
+  <text x="1044" y="842" class="s" text-anchor="middle">40 层</text>
+  <text x="1044" y="868" class="s" text-anchor="middle">抽签</text>
+
+  <text x="30" y="930" class="s">注：数字以 Qwen3:14b 为例。为了简化，图中省略了多头注意力、每步之前的数值调整等细节。</text>
+</svg>
